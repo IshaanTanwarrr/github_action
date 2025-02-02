@@ -1,0 +1,13 @@
+name: My GitHub Action
+
+on: push  # This ensures the action runs when you push code
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v3
+
+      - name: 24ds300032@ds.study.iitm.ac.in  # Your email in the step name
+        run: echo "Hello, world!"
